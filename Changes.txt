@@ -1,0 +1,24 @@
+Revision history for Perl extension Text::CSV_PP::Iterator.
+
+1.00  Tue Jun 19 16:30:45 2007
+	- Original version
+	- Points of interest:
+	o Text::CSV_PP::Iterator reads the file for you, using Iterator::IO.
+		Warning: Iterator::IO V 0.02 has 3 bugs in it, where it does not
+		call throw() properly. I've reported this via http://rt.cpan.org
+	o All of Text::CSV_PP's new() parameters are supported by the fact
+		that Text::CSV_PP::Iterator subclasses Text::CSV_PP
+	o All data is returned as a hashref just like DBI's fetchrow_hashref(),
+		using Text::CSV_PP::Iterator's only method, fetchrow_hashref()
+	o The module reads the column headers from the first record in the file, or ...
+	o The column headers can be passed in to new() if the file has none
+	o Non-existent file errors throw the exception Iterator::X::IO_Error,
+		which stringifies to a nice error message if you don't catch it
+	o EOF returns undef to allow this neat construct:
+		while ($hashref = $parser -> fetchrow_hashref() ){...}
+	o Dependencies:
+	- Iterator::IO
+	- Text::CSV_PP
+	o Example code: t/test.t demonstrates:
+	- How to call fetchrow_hashref in isolation and in a loop
+	- How to call fetchrow_hashref in eval{...} and catch exceptions

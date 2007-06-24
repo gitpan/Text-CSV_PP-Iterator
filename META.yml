@@ -1,0 +1,23 @@
+---
+name: Text-CSV_PP-Iterator
+version: 1.00
+author:
+  - 'Ron Savage <ron@savage.net.au>'
+abstract: Provide fetchrow_hashref() for CSV files
+license: artistic
+resources:
+  license: http://opensource.org/licenses/artistic-license.php
+requires:
+  Iterator::IO: 0
+  Text::CSV_PP: 0
+build_requires:
+  Test::More: 0
+  Test::Pod: 0
+provides:
+  Text::CSV_PP::Iterator:
+    file: lib/Text/CSV_PP/Iterator.pm
+    version: 1.00
+generated_by: Module::Build version 0.2806
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
