@@ -1,5 +1,10 @@
 Revision history for Perl extension Text::CSV_PP::Iterator.
 
+1.01  Thu Feb  5 16:44:50 2009
+	  - Add Exception::Class and Iterator to the list of dependencies in Build.PL and Makefile.PL :-(.
+	  - Reformat these 2 files now that I use Emacs.
+	  - Rename Changes.txt to CHANGES, since some CPAN tools refuse to recognize Changes.txt
+
 1.00  Tue Jun 19 16:30:45 2007
 	- Original version
 	- Points of interest:
