@@ -32,7 +32,7 @@ use Exception::Class
 	},
 );
 
-our $VERSION = '1.01';
+our $VERSION = '1.03';
 
 # -----------------------------------------------
 
@@ -274,16 +274,6 @@ Returns an hashref ref of column data from the next record in the input file.
 
 See the file t/test.t in the distro.
 
-=head1 Required Modules
-
-=over 4
-
-=item Iterator::IO
-
-=item Text::CSV_PP
-
-=back
-
 =head1 Similar Modules
 
 There are quite a few modules on CPAN which offer ways of processing CSV (and similar) files:
@@ -368,10 +358,6 @@ which does not set $self->{header} either. It sets $self->{field_pos}. Oh, dear.
 
 =back
 
-=head1 Changes
-
-See Changes.txt.
-
 =head1 Author
 
 C<Text::CSV_PP::Iterator> was written by Ron Savage I<E<lt>ron@savage.net.auE<gt>> in 2007.
@@ -380,8 +366,7 @@ Home page: http://savage.net.au/index.html
 
 =head1 Copyright
 
-Australian copyright (c) 2007, Ron Savage. All rights reserved.
-
+Australian copyright (c) 2007, Ron Savage.
 	All Programs of mine are 'OSI Certified Open Source Software';
 	you can redistribute them and/or modify them under the terms of
 	The Artistic License, a copy of which is available at:

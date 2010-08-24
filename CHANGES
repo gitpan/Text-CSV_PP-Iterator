@@ -1,5 +1,12 @@
 Revision history for Perl extension Text::CSV_PP::Iterator.
 
+1.03  Sun Feb 21 12:56:32 2010
+	- Remove text 'All rights reserved' (for Debian licensing).
+	- Remove POD heads 'Required Modules' and 'Changes'.
+
+1.02  Wed Feb 10 13:53:06 2010
+	- Add META.yml. Update MANIFEST.SKIP. Add MANIFEST and MYMETA.yml.
+
 1.01  Thu Feb  5 16:44:50 2009
 	  - Add Exception::Class and Iterator to the list of dependencies in Build.PL and Makefile.PL :-(.
 	  - Reformat these 2 files now that I use Emacs.
